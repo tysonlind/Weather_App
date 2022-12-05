@@ -1,5 +1,12 @@
 .App {
   text-align: center;
+  height: 80vh;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  background-color: #fff;
 }
 
 .App-logo {
@@ -14,16 +21,22 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #fff;
+  border: 10px solid #4267B2;
+  border-radius:10%;
+  min-height: 80vh;
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.7), 0px 20px 50px rgba(0,0,0,0.7);
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+.container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-left:50px;
+  padding-top:100px;
 }
-
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +48,41 @@
   to {
     transform: rotate(360deg);
   }
+}
+.App-sun-logo {
+  
+}
+
+@keyframes app-background {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: lightblue;
+  }
+}
+
+form input {
+  width: 15%;
+  height: 2.8rem;
+  background: #f5f5f5;
+  outline: none;
+  border: none;
+  border-radius: 1.625rem;
+  padding: 0 3.5rem 0 1.5rem;
+  font-size: 1rem;
+}
+.round-dots {
+  border-radius: 50%;
+}
+.align-left {
+  text-align:left;
+}
+
+.prettify-button {
+  border:none;
+  border-radius:25%;
+  background:white;
+  font-size:1em;
+  margin:auto;
 }
